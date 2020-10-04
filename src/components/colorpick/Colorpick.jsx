@@ -39,7 +39,7 @@ const Colorpick = () => {
         setFirst(color.hex);
         setSecond(rgbToHex(rgbColor.r * Math.random(), rgbColor.g * Math.random(), rgbColor.b));
         setThird(rgbToHex(rgbColor.r * Math.random(), rgbColor.g * Math.random(), rgbColor.b + 170));
-        setFourth(rgbToHex(rgbColor.r + 130, rgbColor.g  * Math.random() + 130, rgbColor.b + 30));
+        setFourth(rgbToHex(255 - rgbColor.r * Math.random(), 255 - rgbColor.g  * Math.random(), 255 - rgbColor.b));
         
     }}
     />
